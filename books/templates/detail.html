@@ -13,6 +13,10 @@
         <a>Author {{ book.author }}</a>
     </li>
     <li>
-        <a>Tags {{ books.tags }}</a>
+        Tags  {% for tag in book.tags.all %}
+        {{ tag.name }}
+        {% endfor %}
+        
+           
     </li>
 </ul>

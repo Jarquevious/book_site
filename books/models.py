@@ -17,7 +17,7 @@ class Book(models.Model):
     num_pages = models.IntegerField(default=0)
     date_published =  models.DateField()
     author = models.ForeignKey(Author, on_delete=models.CASCADE, null=True)
-    tag = models.ManyToManyField(Tag)
+    tags = models.ManyToManyField(Tag)
 
 
 
