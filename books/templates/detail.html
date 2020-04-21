@@ -10,7 +10,10 @@
     </li>
 
     <li>
-        <a>Author {{ book.author }}</a>
+        <a>Author {{ book.author.birth_date }}</a>
+    </li>
+    <li>
+        <a>Author Name {{ book.author.name }}</a>
     </li>
     <li>
         Tags  {% for tag in book.tags.all %}
